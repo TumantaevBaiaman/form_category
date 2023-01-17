@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'TaskJuniorPython.wsgi.application'
 DATABASES = {
    'default': {
        'ENGINE': 'djongo',
-       'NAME': 'my_data_base',
+       'NAME': 'name_db',
    }
 }
 

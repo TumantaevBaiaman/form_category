@@ -8,13 +8,27 @@ From the command line, type:
 pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
-python manage.py runserver
+```
+
+Setup mongodb in settings.py
+```
+DATABASES = {
+   'default': {
+       'ENGINE': 'djongo',
+       'NAME': 'name_db',
+   }
+}
 ```
 
 Create superuser
 
 ```
 python manage.py createsuperuser
+```
+
+Run project
+```
+python manage.py runserver
 ```
 
 Open your browser to http://localhost:8000 and you should see the browsable version of the API.
